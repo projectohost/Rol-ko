@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пуфіки Люкс</title>
+    <title>Готель Релакс</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,10 +13,11 @@
 
     <header>
         <div class="header-container">
-            <h1>Пуфіки Люкс</h1>
+            <h1>Готель Релакс</h1>
             <nav>
                 <ul>
-                    <li><a href="#products">Товари</a></li>
+                    <li><a href="#rooms">Номери</a></li>
+                    <li><a href="#services">Послуги</a></li>
                     <li><a href="#about">Про Нас</a></li>
                     <li><a href="#contact">Контакти</a></li>
                 </ul>
@@ -24,62 +26,124 @@
     </header>
 
     <section id="hero">
-        <div class="hero-content">
-            <h2>Затишок та стиль чекають на вас</h2>
-            <p>Оформіть ваш простір з нашими чудовими пуфіками!</p>
-        </div>
-    </section>
-
-    <section id="products">
-        <h2>Наші товари</h2>
-    </section>
-      <div class="product-slider">
-    <div class="slide">
-        <img src="https://loco.in.ua/content/images/27/600x600l80mc0/naduvnyi-dyvan-z-pufom-ta-nasosom-116kh98kh83sm-air-sofa-naduvne-krislo-dlia-vidpochynku-86158909086239.webp" alt="Фото пуфіка 1">
-        <div class="item-details">
-            <h3>Пуфік "Еко-стайл"</h3>
-            <p>М'який, комфортний та екологічно чистий</p>
-            <p>Ціна: $50</p>
-            <button class="choose-button">Купити</button>
-        </div>
-    </div>
-    <!-- Додайте інші слайди тут -->
-</div>
-
-<section id="about">
-    <h2>Про Нас</h2>
-    <div class="about-content">
-        <p>Ми пропонуємо найкращі пуфіки для вашого будинку або офісу. Наші продукти поєднують в собі стиль, комфорт та високу якість. Зверніться до нас сьогодні, щоб прикрасити ваш простір!</p>
-        <button class="toggle-button" onclick="toggleAbout()">Детальніше</button>
+    <div class="hero-content">
+        <h2>Затишок і комфорт чекають на вас</h2>
+        <p>Відчуйте себе як вдома!</p>
     </div>
 </section>
 
-<script>
-    function toggleAbout() {
-        var content = document.querySelector('.about-content p');
-        var button = document.querySelector('.toggle-button');
 
-        if (content.style.display === "none") {
-            content.style.display = "block";
-            button.textContent = "Згорнути";
-        } else {
-            content.style.display = "none";
-            button.textContent = "Детальніше";
-        }
-    }
-</script>
+    <section id="rooms">
+        <h2>Номери</h2>
+
+         <div class="room-item">
+            <img src="https://krasnasadyba.if.ua/images/seat-05.jpg" alt="Фото номеру 1">
+            <div class="item-details">
+                <h3>Економ клас</h3>
+                <p>Ліжко ACTI, Wi-Fi, телевізор</p>
+                <p>Ціна: 1000 грн/добу</p>
+                <button class="choose-button">Обрати</button>
+            </div>
+        </div>
+
+        <div class="room-item">
+            <img src="https://bratislava-images.s3.amazonaws.com/uploadimage/cfc2e2b13ecd4dbca278f41c9469fc19.jpg" alt="Фото номеру 1">
+            <div class="item-details">
+                <h3>Стандартний номер</h3>
+                <p>Ліжко King-size, Wi-Fi, телевізор</p>
+                <p>Ціна: 2000 грн/добу</p>
+                <button class="choose-button">Обрати</button>
+            </div>
+        </div>
+
+        <div class="room-item">
+            <img src="https://bakkara-hotel.com.ua/wp-content/uploads/2018/06/MG_4765_hdr-min-1902x1268.jpg" alt="Фото номеру 2">
+            <div class="item-details">
+                <h3>Люкс</h3>
+                <p>Два ліжка King-size, кухня, балкон,PS5</p>
+                <p>Ціна: 3000 грн/добу</p>
+                <button class="choose-button">Обрати</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Послуги</h2>
+
+        <div class="service-item">
+            <img src="https://bm-bukovel.com/wp-content/uploads/2020/01/33ba75e49227bc5c29a25d5a838b7b9b.jpg" alt="Фото ресторану">
+            <div class="item-details">
+                <h3>Ресторан</h3>
+                <p>Сніданки, обіди, вечері</p>
+                <p>Ціна: за меню</p>
+                <button class="choose-button">Обрати</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+    <img src="https://royalpalace.com.ua/storage/2022/02/royalpalace_hotel_spa-32.jpg" alt="Фото качалки">
+    <div class="item-details">
+        <h3>Качалка</h3>
+        <p>Тренажери, гантелі, бігова доріжка</p>
+        <p>Ціна: від 300 грн</p>
+        <button class="choose-button">Обрати</button>
+    </div>
+</div>
+
+
+        <div class="service-item">
+            <img src="https://lviv.travel/image/news/db/cf/dbcfa5fd167aaadc64e813368e3c4a709a4908df_1673433431.jpg?crop=3294%2C1772%2C-8%2C177" alt="Фото SPA">
+            <div class="item-details">
+                <h3>SPA-центр</h3>
+                <p>Масаж, сауна, басейн</p>
+                <p>Ціна: від 500 грн</p>
+                <button class="choose-button">Обрати</button>
+            </div>
+        </div>
+    </section>
+
+ <section id="bron">
+        <h4>Бронювання</h4>
+ </section>
+
+<form id="booking-form">
+    <label for="checkin-date">Дата заїзду:</label>
+    <input type="date" id="checkin-date" name="checkin-date" required>
+
+    <label for="checkout-date">Дата виїзду:</label>
+    <input type="date" id="checkout-date" name="checkout-date" required>
+
+    <label for="room-type">Тип номеру:</label>
+    <select id="room-type" name="room-type" required>
+        <option value="economy">Економ клас</option>
+        <option value="standard">Стандартний номер</option>
+        <option value="luxury">Люкс</option>
+    </select>
+
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я">
+
+    <label for="email">Електронна пошта:</label>
+    <input type="email" id="email" name="email" required placeholder="Введіть вашу електронну пошту">
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" name="phone" required placeholder="Введіть ваш номер телефону">
+
+    <button type="submit" id="submit-button">Забронювати</button>
+</form>
 
 
 
-    
 
-   <footer>
+
+<footer>
     <div class="footer-container">
         <div class="footer-section">
             <h3>Швидкі посилання</h3>
             <ul>
-                <li><a href="#products">Товари</a></li>
-                <li><a href="#arrow">Про Нас</a></li>
+                <li><a href="#rooms">Номери</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#about">Про Нас</a></li>
                 <li><a href="#contact">Контакти</a></li>
             </ul>
         </div>
@@ -92,20 +156,21 @@
             </ul>
         </div>
         <div class="footer-section">
-            <h3>Контакти</h3>
+            <h3>Зв'яжіться з нами</h3>
             <address>
                 Вул.<br>
                 Місто, Україна<br>
                 Поштовий індекс
             </address>
-            <p>Email: <a href="mailto:info@pufiki-lux.com">info@pufiki-lux.com</a></p>
+            <p>Email: <a href="mailto:info@hotel.com">info@hotel.com</a></p>
             <p>Телефон: +380 12 345 6789</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Пуфіки Люкс. Усі права захищені.</p>
+        <p>&copy; 2024 Готель Релакс. Усі права захищені.</p>
     </div>
 </footer>
+
 
 </body>
 
