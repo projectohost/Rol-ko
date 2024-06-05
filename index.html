@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пуфіки Люкс</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Пуфіки Люкс</h1>
+            <nav>
+                <ul>
+                    <li><a href="#products">Товари</a></li>
+                    <li><a href="#about">Про Нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Затишок та стиль чекають на вас</h2>
+            <p>Оформіть ваш простір з нашими чудовими пуфіками!</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Наші товари</h2>
+    </section>
+      <div class="product-slider">
+    <div class="slide">
+        <img src="https://loco.in.ua/content/images/27/600x600l80mc0/naduvnyi-dyvan-z-pufom-ta-nasosom-116kh98kh83sm-air-sofa-naduvne-krislo-dlia-vidpochynku-86158909086239.webp" alt="Фото пуфіка 1">
+        <div class="item-details">
+            <h3>Пуфік "Еко-стайл"</h3>
+            <p>М'який, комфортний та екологічно чистий</p>
+            <p>Ціна: $50</p>
+            <button class="choose-button">Купити</button>
+        </div>
+    </div>
+    <!-- Додайте інші слайди тут -->
+</div>
+
+<section id="about">
+    <h2>Про Нас</h2>
+    <div class="about-content">
+        <p>Ми пропонуємо найкращі пуфіки для вашого будинку або офісу. Наші продукти поєднують в собі стиль, комфорт та високу якість. Зверніться до нас сьогодні, щоб прикрасити ваш простір!</p>
+        <button class="toggle-button" onclick="toggleAbout()">Детальніше</button>
+    </div>
+</section>
+
+<script>
+    function toggleAbout() {
+        var content = document.querySelector('.about-content p');
+        var button = document.querySelector('.toggle-button');
+
+        if (content.style.display === "none") {
+            content.style.display = "block";
+            button.textContent = "Згорнути";
+        } else {
+            content.style.display = "none";
+            button.textContent = "Детальніше";
+        }
+    }
+</script>
+
+
+
+    
+
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Швидкі посилання</h3>
+            <ul>
+                <li><a href="#products">Товари</a></li>
+                <li><a href="#arrow">Про Нас</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Підтримка</h3>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Умови використання</a></li>
+                <li><a href="#">Політика конфіденційності</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Контакти</h3>
+            <address>
+                Вул.<br>
+                Місто, Україна<br>
+                Поштовий індекс
+            </address>
+            <p>Email: <a href="mailto:info@pufiki-lux.com">info@pufiki-lux.com</a></p>
+            <p>Телефон: +380 12 345 6789</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Пуфіки Люкс. Усі права захищені.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
