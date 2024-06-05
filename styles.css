@@ -1,0 +1,362 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #222;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+#hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    color: rgb(165, 165, 165);
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#rooms, #services, #about, #contact {
+    padding: 60px 40px;
+}
+
+.room-item, .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.room-item img, .service-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.room-item img:hover, .service-item img:hover {
+    transform: scale(1.05);
+}
+
+.item-details {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.item-details h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.item-details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.choose-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.choose-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* ... попередні стилі ... */
+
+.hero-content h2,
+.hero-content p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Анімація для заголовка */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анімація для параграфа */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hero .hero-content h2 {
+    animation: slideInFromLeft 1s ease-out 0.5s forwards;
+}
+
+#hero .hero-content p {
+    animation: slideInFromRight 1s ease-out 1s forwards;
+}
+
+
+
+
+
+
+
+#hero {
+    background-image: url('https://bratislava-images.s3.amazonaws.com/cache/10/68/1068be97cc57d7ea49412fb28336ee8d.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ... попередні стилі ... */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Стилі для полів введення */
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Стилі для кнопки бронювання */
+#submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилі для успішного бронювання */
+.booking-success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Стилі для кнопки бронювання */
+#submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Анімація для кнопки бронювання */
+#submit-button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+h4{
+display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;}
+
+    /* Анімація для зображень товарів */
+.product-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Анімація при наведенні на зображення товарів */
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Анімація для входу знизу */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.product-slider {
+    display: flex;
+    overflow-x: hidden; /* Приховати зайві слайди, які не влазять у вікно перегортування */
+}
+
+.slide {
+    flex: 0 0 auto; /* Забезпечує правильне розміщення слайдів у ряд */
+    margin-right: 20px; /* Простір між слайдами */
+}
+
+.about-content {
+    max-height: 150px; /* Початково відображати лише частину тексту */
+    overflow: hidden; /* Ховати зайвий текст, який не поміщається */
+    transition: max-height 0.5s ease-out; /* Плавне згортання/розгортання */
+}
+
+.toggle-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
